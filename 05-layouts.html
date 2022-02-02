@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<title>HTML- Layouts</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale-1">
+		<style>
+			{
+			box-sizing: border-box;
+		}
+		body {
+			font-family: arial, helvetica, sans-serif;
+		}
+		/* style the hearder */
+		header {
+			background-color: #666;
+			padding: 30px;
+			text-align: center;
+			font-size: 35px;
+			color: white;
+		}
+		/*creat two columns/boxes that floats next to each other */
+		nav {
+			float: left;
+			width: 30%;
+			height: 300px; /* only for demonstration, should be removed */
+			background: #ccc;
+			padding: 20px;
+		}
+		/* Style the list inside the menu */
+		nav ul {
+			list-style-type: none;
+			padding: 0;
+		}
+		article {
+			float: left;
+			padding: 20px;
+			width: 70%;
+			background-color: #f1f1f1;
+			height: 300px; /* only for demonstration, should be removed */
+		}
+		/* clear floats after columns */
+		section::after {
+			content:"";
+			display: table;
+			clear: both;
+		}
+		/* Style the footer */
+		footer {
+			background-color: #777;
+			padding: 10px;
+			text-align: center;
+			color: white;
+		}		
+		/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+		@media (max-width: 600px) {
+			nav, article {
+				width: 100%;
+				height: auto;
+			}
+		}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h2>Título da página</h2>
+		</header>
+		<section>
+			<nav>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#sobre">Sobre</a></li>
+					<li><a href="./06-formularios.html" target="_blank">Contato</a></li>
+				</ul>
+			</nav>
+			<article>
+				<h1>Título artigo</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis, libero vel varius blandit, enim augue condimentum lacus, et luctus dui urna sed diam. Donec efficitur sollicitudin urna, vitae auctor elit fringilla sit amet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus venenatis fermentum odio, facilisis scelerisque nulla lacinia nec. Curabitur sollicitudin finibus lacus id pharetra. Ut ut est et dolor fermentum pharetra. Maecenas eleifend, lacus et commodo luctus, ante mauris vehicula eros, interdum iaculis elit dolor vel nunc.</p>
+
+				<p>Nunc porttitor lacus eu commodo tincidunt. Morbi placerat nulla a nibh finibus, tincidunt eleifend libero convallis. Praesent faucibus arcu sit amet finibus sodales. Fusce eu elit eu tortor tincidunt accumsan. Aenean mollis dolor ligula, posuere condimentum ligula pharetra non. Quisque euismod ultricies eros, at rutrum erat consectetur et. Cras leo nisl, consectetur nec urna sed, posuere bibendum nunc. Maecenas viverra non augue tincidunt tristique. Praesent vel nibh varius, pellentesque tortor non, varius lacus. Praesent eu magna malesuada, convallis lectus in, commodo massa.</p>
+			</article>
+		</section>
+		<footer>
+			<p>Desenvolvido por Wagner</p>
+		</footer>	
+	</body>
+<html>
