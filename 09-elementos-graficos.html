@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/graficos.css">
+    <title>elementos-graficos</title>
+</head>
+<body>
+    <header>
+        <h1>Front-End</h1>
+    </header>
+        <h2>Elementos gráficos</h2>
+        <div id="grafico-01">
+            <img src="./img/café.jpg" alt="cafe">
+        </div>
+        <div id="grafico-02">
+
+        </div>
+        <div id="imagem-vetorial">
+            <img src="./img/svgcafé.jpg" alt="cafe">
+        </div>
+        <canvas id="canvas"></canvas>
+        <script>
+            var canvas = document.getElementById("canvas");
+            var ctx = canvas.getContext("2d");
+            ctx.fillStyle = "#00ff99";
+            ctx.fillRect(0, 0, 80, 80);
+        </script>
+    <footer>Developed by Wagner</footer>
+</body>
+</html>

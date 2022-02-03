@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+  }
+  
+  body {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: rgb(219, 216, 216);
+  }
+
+  header {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: #333;
+  }
+  
+  h2 {
+    font-size: 2.0rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  nav {
+    float: left;
+    width: 30%;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 10px;
+  }
+
+  li {
+      margin-top: 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: blue;
+  }
+
+  article {
+    padding: 20px;
+    height: 100%;
+    width: 70%;
+    float: left;
+  }
+
+  footer {
+    background-color: #eee;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+
+  #grafico-01 {
+    background-color: brown;
+    width: 200px;
+    height: 200px;
+    overflow: hidden; /* overflow: scroll; cria uma barra apenas dentro do elemento */
+    border-radius: 20%;
+}
+
+#grafico-01 img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.coluna {
+    display: block;
+    width: 50%;
+    padding: 5px;
+    float: left;
+    background: #eee;
+    border: 1px solid #333;
+}
+
+.coluna-3 {
+    columns: 100px 3;
+    width: 100%;
+    padding: 5px;
+    float: left;
+    background: #eee;
+    border: 1px solid #333;
+}
+
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media (max-width: 680px) {
+      nav, article {
+          width: 100%;
+          height: auto;
+      }
+  }
+  
