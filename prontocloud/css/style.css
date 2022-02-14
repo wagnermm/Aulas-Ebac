@@ -151,3 +151,15 @@ footer small {
     overflow: hidden !important;
 
 }
+
+@media (max-width:425px) {
+    section article,
+    section nav {
+        width: 100%
+    }
+
+    .container {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+}
