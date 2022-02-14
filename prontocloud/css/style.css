@@ -149,7 +149,6 @@ footer small {
 .cognito {
     height: 400px !important;
     overflow: hidden !important;
-
 }
 
 @media (max-width:425px) {
