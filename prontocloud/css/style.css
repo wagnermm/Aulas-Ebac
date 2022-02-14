@@ -19,6 +19,7 @@ body {
     padding: 20px;
     width: 100%;
     margin: 0 auto;
+    max-width: 1198px;
 }
 
 header {
@@ -58,6 +59,22 @@ h4 {
  p {
     margin-bottom: 10px;
     line-height: 1.4;
+ }
+
+ img {
+     max-width: 100%;
+     height: auto;
+ }
+
+ #tenho-interesse {
+     background-color: #b8c8d6;
+     width: 100%;
+ }
+
+ #tenho-interesse form,
+.cog-form__content {
+    background-color: #b8c8d6 !important;
+    color: #385874;
  }
 
  ol {
@@ -129,6 +146,8 @@ footer small {
     display: block;
 }
 
-.cog-branding__powered {
-    visibility: hidden !important;
+.cognito {
+    height: 400px !important;
+    overflow: hidden !important;
+
 }
