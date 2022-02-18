@@ -33,3 +33,12 @@
 - Post para redes sociais
 - Incluir hospedagem
 - Git - histórico de evolução (commits detalhados)
+
+
+### URL
+Uniform Resource Locator
+
+- URL amigável: Humanos e mecânismos de busca
+
+https://url.gratis/xao9Ni
+https://ebaconline.com.br/front-end-profession
