@@ -42,3 +42,17 @@ Uniform Resource Locator
 
 https://url.gratis/xao9Ni
 https://ebaconline.com.br/front-end-profession
+
+### Exercício
+Fluxo completo
+Objetivo: capturar o máximo de leads possíveis.
+
+1. Criar landing page
+2. Criar newstletter
+3. Publicar projeto em um servidor web
+4. Criar URL amigável para compartilhamento: https://bityli.com/
+5. Convidar pessoas nas redes sociais para sua landing page (página de destino / pouso)
+6. Enviar newsletter para lista de contatos com link para a página do post: https://putsmail.com
+7. Comitar código no seu repositório do Github
+8. Enviar links para avaliação na plataforma EBAC
+
