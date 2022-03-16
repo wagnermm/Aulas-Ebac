@@ -57,5 +57,74 @@ Algoritimo
 6. Exibir o resultado: print, echo, console.log;
 7. Fim
 
+## Funcionalides Gerais
+- Criar algoritimos  programas para executar no navegador: client side
+- Manipular o DOM: elementos HTML, eventos (clique, submit), estilos CSS
+- Node.js: framework JS para back-end / runtime em JS
+- Mongo.db / GraphQL: banco de dados em JS
+- React Native: framework JS para desenvolvimento mobile
 
+- receber e manipular dados
+- tomar decisões baseados na lógica computacional
+- loop e interações
+- condições de saída
+
+## Executar o JS
+- Console browsers
+- Editores: Sublime, Visual Studio Code
+- JS Fiddle https://jsfiddle.net
+
+### Instalação do Node.js
+- Para a gente conseguir executar scripts JS no terminal de comando, precisamos utilizar o Node.js
+- Instalação: htts://nodejs.org/pt-br/download/package-manager/
+
+* Windowns: Primeiro instalar o Chocolatey
+- Precisa executar o PowerShell como administrador
+- Se tudo der certo na instalação do chocolatey, rodar: choco install nvs
+- nvs add lts
+- $ nvs use lts
+PATH -= %LOCALAPPDATA%\nvs\default
+PATH -= %LOCALAPPDATA%\nvs\node\14.17.0\x64
+
+* MacOs: Primeiro instalar o Homebrew
+- Se tudo der certo na instalação do Homebrew, rodar: brew install node
+
+### Após concluir a instalação
+Rodar em um novo terminal: node -v
+
+### Variáveis
+São utiliazadas para referenciar espaço na memória
+
+- var
+- const (fica com valor imutável)
+- let
+- string (tipo de variável para conjunto de caracteres)
+- tipagem: número ou string
+- array: conjunto de valores
+
+## Operdores
+- Soma +
+- Subtração -
+- Multiplicar *
+- Dividir /
+- Módulo (resto de divisão) %
+- Math: Random(), round(), sqrt().
+
+* Atribuição
+a = b
+a += b
+a -= b
+a *= b
+a /= b
+a %= b
+
+* Operadores de comparação / Lógicos
+- Igual == ou ===
+- Diferente !=
+- Maior que >
+- Maior ou igual que >=
+- Menor que <
+- Menor ou igual que <=
+
+https://developer.monzilla.org/pt-br/docs/web/javascript/guide/expressions_and_operators
 
