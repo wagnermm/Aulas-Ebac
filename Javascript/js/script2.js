@@ -20,15 +20,15 @@
         
         }
         
-        function validaCampoNumerico(elemento){
+        function validaCep(elemento){
         
             elemento.addEventListener('focusout', function(event) {
         
                 event.preventDefault();
         
-                let numero = this.value.match(/^[\d]5-[\d]3/) ? this.value.replace(/-/, "") : this.value; 
+                const cepValido = /^[0-9]{5}[-][0-9]{3}$/; 
         
-                if(numero != "" && numero.match(/[0-9]*/) && numero >= 0 && numero <= 10){
+                if(this.value.match(cepValido)){
                     document.querySelector('.mensagem').innerHTML = "";
                     this.classList.remove('erro');
                     this.parentNode.classList.remove('erro');
@@ -73,7 +73,7 @@
 
                 event.preventDefault();
 
-                const ufValido = /[a-z][a-z]{1,1}/i;
+                const ufValido = /^[a-z]{2}$/i;
                 if(this.value.match(ufValido)) {
                     document.querySelector('.mensagem').innerHTML = "";
                     this.classList.remove('erro');
@@ -92,7 +92,7 @@
         
         
         let camposObrigatorios = document.querySelectorAll('input.obrigatorio');
-        let camposNumericos = document.querySelectorAll('input.numerico');
+        let camposCep = document.querySelectorAll('input.cep');
         let camposEmail = document.querySelectorAll('input.email');
         let camposUf = document.querySelectorAll('input.uf');
         
@@ -100,8 +100,8 @@
             validaCampo(emFoco);
         }
         
-        for( let emFoco of camposNumericos) {
-            validaCampoNumerico(emFoco);
+        for( let emFoco of camposCep) {
+            validaCep(emFoco);
         }
         
         for( let emFoco of camposEmail) {
