@@ -6,7 +6,7 @@
                 event.preventDefault();
         
                 if(this.value == ""){
-                    document.querySelector('.mensagem').innerHTML = "Verifique o preenchimento dos campos em vermelho";
+                    document.querySelector('.mensagem').innerHTML = "Por favor, verifique os campos destacados";
                     this.classList.add('erro');
                     this.parentNode.classList.add('erro');
                     return false;
@@ -33,7 +33,7 @@
                     this.classList.remove('erro');
                     this.parentNode.classList.remove('erro');
                 } else {
-                    document.querySelector('.mensagem').innerHTML = "Verifique o preenchimento dos campos em vermelho";
+                    document.querySelector('.mensagem').innerHTML = "Por favor, verifique os campos destacados";
                     this.classList.add('erro');
                     this.parentNode.classList.add('erro');
                     return false;
@@ -56,7 +56,7 @@
                     this.classList.remove('erro');
                     this.parentNode.classList.remove('erro');
                 } else {
-                    document.querySelector('.mensagem').innerHTML = "verifique o preenchimento dos campos em destaque";
+                    document.querySelector('.mensagem').innerHTML = "Por favor, verifique os campos destacados";
                     this.classList.add('erro');
                     this.parentNode.classList.add('erro');
                     return false;
@@ -73,13 +73,13 @@
 
                 event.preventDefault();
 
-                const ufValido = /\d\d/i;
+                const ufValido = /[a-z][a-z]{1,1}/i;
                 if(this.value.match(ufValido)) {
                     document.querySelector('.mensagem').innerHTML = "";
                     this.classList.remove('erro');
                     this.parentNode.classList.remove('erro');
                 } else {
-                    document.querySelector('.mensagem').innerHTML = "verifique o preenchimento dos campos em destaque";
+                    document.querySelector('.mensagem').innerHTML = "Por favor, verifique os campos destacados";
                     this.classList.add('erro');
                     this.parentNode.classList.add('erro');
                     return false;
@@ -92,7 +92,7 @@
         
         
         let camposObrigatorios = document.querySelectorAll('input.obrigatorio');
-        let camposNumericos = document.querySelectorAll('input.numero');
+        let camposNumericos = document.querySelectorAll('input.numerico');
         let camposEmail = document.querySelectorAll('input.email');
         let camposUf = document.querySelectorAll('input.uf');
         
@@ -106,4 +106,8 @@
         
         for( let emFoco of camposEmail) {
             validaEmail(emFoco);
+        }
+
+        for( let emFoco of camposUf) {
+            validaCampoUf(emFoco);
         }
