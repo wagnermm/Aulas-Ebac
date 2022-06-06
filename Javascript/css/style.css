@@ -64,6 +64,15 @@ button:hover {
     background-color: #4545c2;
 }
 
+button:disabled {
+    opacity: .4;
+    cursor: default;
+}
+
+button:disabled:hover {
+    background-color: #2121be;
+}
+
 .mensagem,
 #resultado {
     font-size: 2rem;

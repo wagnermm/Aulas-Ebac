@@ -19,6 +19,21 @@
             });
         
         }
+
+        function disableButton() {
+            const name = document.getElementById('nome').value;
+            const email = document.getElementById('email').value;
+            const telefone = document.getElementById('telefone').value;
+            const cep = document.getElementById('cep').value;
+            const cidade = document.getElementById('cidade').value;
+            const uf = document.getElementById('uf').value;
+
+            if(name && email && telefone && cep && cidade && uf) {
+                document.querySelector('#btn').disabled = false;
+                return
+            }
+            document.querySelector('#btn').disabled = true;
+        }
         
         function validaCep(elemento){
         
