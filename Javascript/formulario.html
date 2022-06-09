@@ -17,8 +17,8 @@
             <h2>Faça seu cadastro</h2>
             <input type="text" placeholder="Digite seu nome" class="obrigatorio" name="nome" id="nome" onchange="disableButton()">
             <input type="text" placeholder="Digite seu e-mail" class="email" name="email" id="email" onchange="disableButton()">
-            <input type="text" placeholder="Digite seu telefone" class="" name="telefone" id="telefone" onchange="disableButton()">
-            <input type="text" placeholder="Digite seu cep" class="cep" name="cep" id="cep" onchange="disableButton()">
+            <input type="text" placeholder="Digite seu telefone" class="" name="telefone" id="telefone" onchange="disableButton()" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+            <input type="text" placeholder="Digite seu cep" class="cep" name="cep" id="cep" onchange="disableButton()" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
             <input type="text" placeholder="Digite sua cidade" class="obrigatorio" name="cidade" id="cidade" onchange="disableButton()">
             <input type="text" placeholder="Digite seu uf" class="uf" name="uf" id="uf" onchange="disableButton()">
             <button id="btn" disabled>Enviar</button>
