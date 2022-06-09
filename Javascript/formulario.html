@@ -11,16 +11,19 @@
     
     <div class="container">
 
-        <div class="mensagem"></div>
-
         <form id="formulario">
             <h2>Faça seu cadastro</h2>
             <input type="text" placeholder="Digite seu nome" class="obrigatorio" name="nome" id="nome" onchange="disableButton()">
+            <div class="mensagem-nome"></div>
             <input type="text" placeholder="Digite seu e-mail" class="email" name="email" id="email" onchange="disableButton()">
+            <div class="mensagem-email"></div>
             <input type="text" placeholder="Digite seu telefone" class="" name="telefone" id="telefone" onchange="disableButton()" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
-            <input type="text" placeholder="Digite seu cep" class="cep" name="cep" id="cep" onchange="disableButton()" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
-            <input type="text" placeholder="Digite sua cidade" class="obrigatorio" name="cidade" id="cidade" onchange="disableButton()">
+            <input type="text" placeholder="Digite seu cep" class="cep" name="cep" id="cep" onchange="disableButton()" onkeypress="return event.charCode >= 8 && event.charCode <= 57">
+            <div class="mensagem-cep"></div>
+            <input type="text" placeholder="Digite sua cidade" class="obrigatorio2" name="cidade" id="cidade" onchange="disableButton()">
+            <div class="mensagem-city"></div>
             <input type="text" placeholder="Digite seu uf" class="uf" name="uf" id="uf" onchange="disableButton()">
+            <div class="mensagem-uf"></div>
             <button id="btn" disabled>Enviar</button>
         </form>
 

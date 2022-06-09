@@ -80,6 +80,14 @@ button:disabled:hover {
     padding: 2rem;
 }
 
+.mensagem-nome, .mensagem-city,
+.mensagem-email, .mensagem-cep,
+.mensagem-uf{
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    height: auto;
+}
+
 .erro {
     border-color: #f00;
 }
