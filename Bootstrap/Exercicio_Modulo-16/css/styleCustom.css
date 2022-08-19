@@ -5,6 +5,7 @@
 
 body {
     background: url(../img/strawberry.jpg);
+    overflow-x: hidden;
 }
 
 section {
@@ -129,3 +130,81 @@ button:disabled {
 .erro {
     border-color: #f00;
 }
+
+@media(max-width: 480px) {
+    html {
+        overflow-x: hidden !important;
+    }
+
+    body {
+        min-width:320px;
+        overflow-x: hidden !important;
+    }
+
+    .main {
+        width: 90%;
+        text-align: center;
+        overflow-x: hidden;
+    }
+
+    .rodape {
+        text-align: center;
+    }
+
+    #btn {
+        font-size: 15px;
+    }
+
+    #log {
+        padding: 0;
+        text-align: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+   
+}
+
+@media(max-width: 790px) {
+    html {
+        overflow-x: hidden !important;
+    }
+    
+    body {
+        min-width: 481px;
+        overflow-x: hidden !important;
+    }
+
+    .main {
+        width: 90%;
+        text-align: center;
+        overflow-x: hidden;
+    }
+
+    .rodape {
+        text-align: center;
+    }
+
+    #btn {
+        font-size: 15px;
+    }
+
+    #log {
+        padding: 0;
+        text-align: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card p {
+        font-size: 16px;
+    }
+}
+
