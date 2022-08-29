@@ -5,7 +5,7 @@ function validaCampo(elemento){
         event.preventDefault();
 
         if(this.value == ""){
-            document.querySelector('.telaMensagem').innerHTML = "Por favor, preencha os campos obrigatório";
+            document.querySelector('.telaMensagem').innerHTML = "Por favor, preencha os campos obrigatórios";
             this.classList.add('erro');
             this.parentNode.classList.add('erro');
             return false;
@@ -25,8 +25,11 @@ for( let emFoco of camposObrigatorios) {
 
 
 function disableButton() {
-    let obrigatorio = document.querySelector('#obrigatorio').value;
-    if(obrigatorio) {
+    let obrigatorio1 = document.querySelector('#obrigatorio-1').value;
+    let obrigatorio2 = document.querySelector('#obrigatorio-2').value;
+    let obrigatorio3 = document.querySelector('#obrigatorio-3').value;
+    let obrigatorio4 = document.querySelector('#obrigatorio-4').value;
+    if(obrigatorio1 && obrigatorio2 && obrigatorio3 && obrigatorio4) {
         document.querySelector('#btn').disabled = false;
         return
     }

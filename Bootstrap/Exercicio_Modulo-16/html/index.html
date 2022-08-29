@@ -305,27 +305,48 @@
     <div class="rodape">
         <section>
             <div class="container">
+                <div class="mensagem">
+                    <div class="telaMensagem">
+                    </div>
+                </div>
                 <p>Gostou? Preencha o formulário e faça já seu pedido.</p>
                 <form class="form">
                     <div class="row">
-                        <div class="input-group col-md-3 col-sm-12">
-                            <input class="form-control" type="text" name="nome" placeholder="digite o seu nome" id="obrigatorio" onchange="disableButton()">
-                            <input class="form-control" type="text" name="telefone" placeholder="digite o seu telefone" id="obrigatorio" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onchange="disableButton()">
+                        <div class="col">
+                            <div class="input-group">
+                                <input class="form-control" type="text" name="nome" placeholder="digite o seu nome" id="obrigatorio-1" onchange="disableButton()">
+                            </div>
                         </div>
-                        <div class="input-group col-md-3 col-sm-12">
-                            <input class="form-control" type="text" name="email" placeholder="digite o seu e-mail" id="obrigatorio" onchange="disableButton()">
-                            <input class="form-control" type="text" name="endereço" placeholder="digite o seu endereço" id="obrigatorio" onchange="disableButton()">
+                        <div class="col">
+                            <div class="input-group">
+                                <input class="form-control" type="text" name="telefone" placeholder="digite o seu telefone" id="obrigatorio-2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onchange="disableButton()">
+                            </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6 col-sm-12">
-                            <textarea class="form-control" rows="5" placeholder="descrição do pedido"></textarea>
+                        <div class="col">
+                            <div class="input-group">
+                                <input class="form-control" type="text" name="email" placeholder="digite o seu e-mail" id="obrigatorio-3" onchange="disableButton()">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group">
+                                <input class="form-control" type="text" name="endereço" placeholder="digite o seu endereço" id="obrigatorio-4" onchange="disableButton()">
+                            </div>
                         </div>
                     </div>
-                    <button class="btn btn-lg btn-secondary" id="btn" disabled>Pedir online</button>
-                    <div class="telaMensagem">
+                    <div class="row">
+                        <div class="col">
+                            <div class="input-group">
+                                <textarea class="form-control" rows="5" placeholder="descrição do pedido"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="botao">
+                        <button class="btn btn-lg btn-secondary" id="btn" disabled>Pedir online</button>
                     </div>
                 </form>
+                
             </div>
         </section>
         <div class="top">
