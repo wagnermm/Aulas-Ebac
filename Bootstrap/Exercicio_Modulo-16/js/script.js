@@ -14,13 +14,38 @@ function validaCampo(elemento){
             this.classList.remove('erro');
             this.parentNode.classList.remove('erro');
         }
-
     });
 }
 
 let camposObrigatorios = document.querySelectorAll('input.form-control');
 for( let emFoco of camposObrigatorios) {
     validaCampo(emFoco);
+}
+
+function validaEmail(elemento) {
+
+    elemento.addEventListener('focusout', function(event) {
+
+        event.preventDefault();
+
+        const emailValido = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?/i;
+        if(this.value.match(emailValido)) {
+            document.querySelector('.mensagem-email').innerHTML = "";
+            this.classList.remove('erro');
+            this.parentNode.classList.remove('erro');
+        } else {
+            document.querySelector('.mensagem-email').innerHTML = "Padrão incorreto";
+            this.classList.add('erro');
+            this.parentNode.classList.add('erro');
+            return false;
+        }
+    
+    });
+}
+
+let campusEmail = document.querySelectorAll('input#obrigatorio-3');
+for( let emFoco of campusEmail) {
+    validaEmail(emFoco);
 }
 
 
@@ -32,6 +57,7 @@ function disableButton() {
     if(obrigatorio1 && obrigatorio2 && obrigatorio3 && obrigatorio4) {
         document.querySelector('#btn').disabled = false;
         return
+    } else {
+        document.querySelector('#btn').disabled = true;
     }
-    document.querySelector('#btn').disabled = true;
 }
