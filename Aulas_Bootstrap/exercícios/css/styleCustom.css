@@ -35,10 +35,6 @@ li {
     cursor: pointer;
 }
 
-#log img:hover {
-    filter:invert(100%);
-}
-
 nav  {
     display: inline;
 }
