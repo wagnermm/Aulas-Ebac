@@ -74,6 +74,24 @@
 
  ...
  
+## Componentes
+- Blocos / Modelos / Templetes reutilizáveis
+https://getbootstrap.com/docs/5.1/components
 
 
+## Helpers
+- Funções básicas
+- Incementos
+- Ajustes
+https://getbootstrap.com/docs/5.1/helpers
 
+
+# Font Awesome
+- Biblioteca de ícones
+https://fontawesome.com/start/
+
+
+# Exercício
+- incluir carousel na home antes de sobre
+- completar o cadastro, tornando os campos obrigatórios
+- incluir os campos: bairro, complemento e telefone
