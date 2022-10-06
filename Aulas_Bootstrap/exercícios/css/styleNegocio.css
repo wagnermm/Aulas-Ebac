@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-image: linear-gradient(to left, black, #252323);
+}
+
+#logo {
+    width: 40%;
+}
+
+#sociais ul li {
+    display: inline-block;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+#sociais-img {
+    height: 40px;
+}
+
+.urls {
+    border-bottom: 3px solid #efefef;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#menu ul li {
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+#menu ul li a {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #8b8b8b;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+#menu ul li:hover {
+    border-bottom: 3px solid #00bac6;
+    height: 50px;
+}
+
+#menu ul li a:hover {
+    color: #00bac6;
+}
+
+.busca {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.busca input {
+    background-image: url(../img/img_used/icone-search.png);
+    background-repeat: no-repeat;
+    background-position: 96%;
+    border: 1px solid #d6d6d6;
+    cursor: pointer;
+}
+
+#title {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 40px 40px;
+    text-align: center;
+}
+
+#info {
+    padding: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #8b8b8b;
+}
+
+#predio img {
+    width: 100%;
+}
+
+@media (max-width: 480px) {
+    #logo {
+        width: 100%;
+    }
+
+    #sociais ul li {
+        padding: 5px;
+        margin-top: 10px;
+    }
+}
