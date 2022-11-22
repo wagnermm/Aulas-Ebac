@@ -1,0 +1,154 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color:#eaeff3;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    padding: 20px;
+    border-bottom: 1px solid#254159;
+}
+
+.content-1 {
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+}
+
+.legenda-container {
+    width: 30vw;
+    float: right;
+}
+
+.legenda {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 50px;
+    margin-bottom: 7rem;
+    margin-top: 15px;
+    box-shadow: 2px 2px 4px black;
+}
+
+.legenda h3, .legenda h4 {
+    color: #254159;
+    line-height: 150%;
+}
+
+#btn {
+    border-radius: 50px;
+    height: 35px;
+    font-size: 16px;
+    box-shadow: 2px 2px 4px black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#saiba-mais img {
+    width: 100%;
+}
+
+#info {
+    padding: 20px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content-2 {
+    margin: 20px;
+}
+
+.content-3 {
+    background-color: #b8c8d6;
+    color: #254159;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+dt {
+    font-size: 16px;
+}
+
+dd {
+    font-size: 14px;
+}
+
+.content-4 {
+    background-color: #1a2d3d;
+    text-align: center;
+    color: #eaeff3;
+    padding: 20px
+}
+
+.content-4 h1 {
+    padding-top: 40px;
+}
+
+.content-4 p {
+    font-size: 12px;
+}
+
+label, input {
+    margin: 2rem;
+}
+
+.content-4 #btn {
+    margin-top: 40px;
+    color: #1a2d3d;
+    margin-bottom: 60px;
+}
+
+footer {
+    background-color: #eaeff3;
+    color: #254159;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
+@media(max-width:480px) {
+    body {
+        overflow-x: hidden;
+    }
+    .legenda-container {
+        padding-right: 7%;
+    }
+    .legenda {
+        padding: 15px;
+        margin: 2px;
+    }
+    .legenda h3, .legenda h4 {
+        font-size: 11px;
+    }
+    #btn {
+        font-size: 12px;
+        height: auto;
+    }
+
+    #saiba-mais {
+        width: 100%;
+    }
+    
+    #saiba-mais img {
+        width: 100%;
+    }
+
+    #info {
+        width: 100%;
+    }
+}
+
